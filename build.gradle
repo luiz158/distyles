@@ -9,13 +9,13 @@ configure(subprojects) {
         maven { url "http://repo.springsource.org/libs-milestone" }
     }
 
-    ext.springVersion = '3.2.0.M1'
+    ext.springVersion = '4.3.7.RELEASE'
 
     dependencies {
         compile "org.springframework:spring-jdbc:${springVersion}"
         compile 'hsqldb:hsqldb:1.8.0.10'
         compile 'log4j:log4j:1.2.16'
-        testCompile 'junit:junit:4.9'
+        testCompile 'junit:junit:4.12'
     }
 
     eclipse {
@@ -36,8 +36,8 @@ configure(subprojects) {
         }
     }
 
-    sourceCompatibility=1.6
-    targetCompatibility=1.6
+    sourceCompatibility=1.7
+    targetCompatibility=1.7
 
     // show all compiler warnings
     [compileJava, compileTestJava]*.options*.compilerArgs = ['-Xlint:all']
