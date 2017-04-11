@@ -1,0 +1,14 @@
+
+mvn exec:java -Dexec.mainClass="com.example.Main" [-Dexec.args="argument1"] ...
+
+# http://ocpsoft.org/opensource/when-builds-fail-for-no-reason-feeding-maven-memory/
+
+export MAVEN_OPTS="-Xmx1024m -XX:MaxPermSize=512m"
+
+mvn compile exec:exec -DskipTests=true
+
+mvn clean package exec:exec
+
+mvn exec:exec
+
+
