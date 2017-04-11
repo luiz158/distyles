@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<modelVersion>4.0.0</modelVersion>
+	<parent>
+		<groupId>springone.distyles</groupId>
+		<artifactId>parent</artifactId>
+		<version>1.0.0.SNAPSHOT</version>
+	</parent>
+	<artifactId>autowired</artifactId>
+	<packaging>jar</packaging>
+	<name>DI Styles: @Autowired</name>
+	<description>
+		This project demonstrates the @Autowired style of dependency injection
+	</description>
+	<dependencies>
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-context</artifactId>
+			<version>4.3.7.RELEASE</version>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-test</artifactId>
+			<version>4.3.7.RELEASE</version>
+		</dependency>
+	</dependencies>
+</project>
